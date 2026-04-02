@@ -1,0 +1,31 @@
+# data.yaml — YOLOv8 训练配置文件模板
+# 使用前请替换所有占位符
+# 注意：Windows 路径使用正斜杠 /
+
+# ========== 必填配置 ==========
+
+# 数据集根目录（绝对路径或相对于运行命令的路径）
+path: E:/2026-3-25/ecar/yolo/dataset
+
+# 训练集图片目录（相对于 path）
+train: images/train
+
+# 验证集图片目录（相对于 path）
+val: images/val
+
+# ========== 类别配置 ==========
+
+# 类别总数
+nc: 4
+
+# 类别名称（键为类别 ID，从 0 开始，值建议英文无空格）
+names:
+  0: Anumber
+  1: black
+  2: blue
+  3: yellow
+
+# ========== 说明 ==========
+# 标签文件（.txt）应放在 dataset/labels/{train,val}/ 目录
+# 每张图片对应一个同名 .txt 文件
+# 标签格式：class_id x_center y_center width height（均为归一化值 0.0~1.0）
